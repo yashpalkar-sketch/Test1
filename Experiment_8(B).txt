@@ -1,0 +1,26 @@
+/* Name - Yash Palkar
+   UIN - 251M038
+   Roll no. - 34
+   Div - F (Mechanical) */
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[100];
+    int i, len;
+
+    printf("Enter a string: ");
+    scanf("%s", str);   
+
+    len = strlen(str);
+
+    for (i = 0; i < len; i++) {
+        if (str[i] != str[len - 1 - i]) {
+            printf("Not a palindrome.");
+            return 0;
+        }
+    }
+
+    printf("Palindrome!");
+    return 0;
+}
